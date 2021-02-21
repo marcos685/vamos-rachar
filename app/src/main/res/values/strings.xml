@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Vamos Rachar</string>
+    <string name="result_conta">"A conta dividida por pessoa deu "</string>
 </resources>

@@ -83,13 +83,13 @@ class MainActivity : AppCompatActivity(), TextWatcher, View.OnClickListener, Tex
         if (v==btShare){
             val intent = Intent(Intent.ACTION_SEND)
             intent.type = "text/plain"
-            intent.putExtra(Intent.EXTRA_TEXT, "A conta dividida por pessoa deu "+ resultField.text.toString())
+            intent.putExtra(Intent.EXTRA_TEXT, R.string.result_conta.toString() + resultField.text.toString())
             startActivity(intent)
         }
 
         if (v==btTTS) {
             if (ttsPlayer !=null ) {
-                ttsPlayer.speak("A conta dividida por pessoa deu "+ resultField.text.toString()+" reais", TextToSpeech.QUEUE_FLUSH, null, "ID1" )
+                ttsPlayer.speak(R.string.result_conta.toString()+ resultField.text.toString(), TextToSpeech.QUEUE_FLUSH, null, "ID1" )
             }
         }
     }
